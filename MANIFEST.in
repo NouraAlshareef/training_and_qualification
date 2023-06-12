@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include training_and_qualification *.css
+recursive-include training_and_qualification *.csv
+recursive-include training_and_qualification *.html
+recursive-include training_and_qualification *.ico
+recursive-include training_and_qualification *.js
+recursive-include training_and_qualification *.json
+recursive-include training_and_qualification *.md
+recursive-include training_and_qualification *.png
+recursive-include training_and_qualification *.py
+recursive-include training_and_qualification *.svg
+recursive-include training_and_qualification *.txt
+recursive-exclude training_and_qualification *.pyc
