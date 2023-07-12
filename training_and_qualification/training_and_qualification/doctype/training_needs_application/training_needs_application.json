@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-18 07:00:14.722424",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "university_entity",
+  "training_year",
+  "entity_training_needs_details",
+  "total",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "university_entity",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "University Entity",
+   "options": "University Entity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "training_year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Training Year",
+   "options": "Training Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "entity_training_needs_details",
+   "fieldtype": "Table",
+   "label": "Entity Training Needs Details",
+   "options": "Entity Training Needs Details",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Int",
+   "label": "Total"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Training Needs Application",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-06-18 07:02:16.346803",
+ "modified_by": "Administrator",
+ "module": "Training And Qualification",
+ "name": "Training Needs Application",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

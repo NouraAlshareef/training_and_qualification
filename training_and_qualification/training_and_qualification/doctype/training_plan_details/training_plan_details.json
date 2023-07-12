@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-07-12 19:18:35.250144",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "training_topic",
+  "number",
+  "address",
+  "column_break_2n6s",
+  "duration",
+  "duration_in",
+  "from_date",
+  "to_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "training_topic",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Training Topic",
+   "options": "Training Topic",
+   "reqd": 1
+  },
+  {
+   "fieldname": "number",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Number of Trainers",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Duration",
+   "reqd": 1
+  },
+  {
+   "fieldname": "duration_in",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Duration In",
+   "options": "Days\nHours\nMonths",
+   "reqd": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "From Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "column_break_2n6s",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-07-12 19:32:18.364355",
+ "modified_by": "Administrator",
+ "module": "Training And Qualification",
+ "name": "Training Plan Details",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

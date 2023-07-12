@@ -1,0 +1,155 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-07-12 19:41:32.491731",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "series",
+  "plan",
+  "training_topic",
+  "training_category",
+  "training_type",
+  "column_break_uuko",
+  "training_year",
+  "from_date",
+  "to_date",
+  "training_duration",
+  "duration_in",
+  "column_break_xdyr",
+  "status",
+  "address",
+  "section_break_wqbm",
+  "trainers_and_adminstration_team"
+ ],
+ "fields": [
+  {
+   "fieldname": "series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "TQ-TO.{plan}.####"
+  },
+  {
+   "fieldname": "plan",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Training Plan",
+   "options": "Training Plan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "training_topic",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Training Topic",
+   "options": "Training Topic",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "plan.training_category",
+   "fieldname": "training_category",
+   "fieldtype": "Link",
+   "label": "Training Category",
+   "options": "Training Category",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "plan.training_type",
+   "fieldname": "training_type",
+   "fieldtype": "Select",
+   "label": "Training Type",
+   "options": "Internal\nExternal",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_uuko",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "plan.training_year",
+   "fieldname": "training_year",
+   "fieldtype": "Link",
+   "label": "Training Year",
+   "options": "Training Year",
+   "read_only": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_wqbm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "trainers_and_adminstration_team",
+   "fieldtype": "Table",
+   "label": "Trainers and Adminstration Team",
+   "options": "Trainers and Adminstration Team"
+  },
+  {
+   "fieldname": "column_break_xdyr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "training_duration",
+   "fieldtype": "Int",
+   "label": "Training Duration"
+  },
+  {
+   "fieldname": "duration_in",
+   "fieldtype": "Select",
+   "label": "Duration In",
+   "options": "Hours\nDays"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nPlanned\nClosed"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-12 20:10:48.780539",
+ "modified_by": "Administrator",
+ "module": "Training And Qualification",
+ "name": "Training Opening",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
